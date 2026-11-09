@@ -1,7 +1,9 @@
 .PHONY: up down test test-go test-py sim bench
 
 COMPOSE = docker compose --env-file .env -f deploy/docker-compose.yml
-PYTHON ?= python
+# Uses the simulator venv (Python 3.11, see .python-version); override with PYTHON=...
+# Create it with: py -3.11 -m venv simulator/.venv && simulator/.venv/Scripts/python -m pip install -e "simulator[dev]"
+PYTHON ?= .venv/Scripts/python
 
 # Start PostgreSQL and Redis (creates .env from .env.example if missing).
 up:
