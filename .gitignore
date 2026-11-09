@@ -1,0 +1,26 @@
+# Secrets / local config
+.env
+
+# Go
+*.exe
+*.test
+*.out
+bidder/bin/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Data and outputs
+*.parquet
+*.duckdb
+bench/results/raw/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
