@@ -1,0 +1,42 @@
+{
+  "campaigns": [
+    {
+      "id": "sim-usa-android",
+      "status": "active",
+      "cpm_micros": 3000000,
+      "geo": ["USA"],
+      "os": ["android"],
+      "creatives": [
+        { "crid": "cr-usa-android-300x250", "w": 300, "h": 250 }
+      ]
+    },
+    {
+      "id": "sim-usa-ios",
+      "status": "active",
+      "cpm_micros": 2500000,
+      "geo": ["USA"],
+      "os": ["ios"],
+      "creatives": [
+        { "crid": "cr-usa-ios-300x250", "w": 300, "h": 250 }
+      ]
+    },
+    {
+      "id": "sim-can-gbr",
+      "status": "active",
+      "cpm_micros": 1500000,
+      "geo": ["CAN", "GBR"],
+      "creatives": [
+        { "crid": "cr-can-gbr-300x250", "w": 300, "h": 250 },
+        { "crid": "cr-can-gbr-728x90", "w": 728, "h": 90 }
+      ]
+    },
+    {
+      "id": "sim-paused",
+      "status": "paused",
+      "cpm_micros": 9000000,
+      "creatives": [
+        { "crid": "cr-paused-300x250", "w": 300, "h": 250 }
+      ]
+    }
+  ]
+}

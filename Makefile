@@ -21,9 +21,12 @@ test-go:
 test-py:
 	cd simulator && $(PYTHON) -m pytest
 
-# Run the simulator (placeholder until Milestone 1).
+# Build+start the Go bidder, replay seeded synthetic traffic, print a summary.
+# Override with e.g. `make sim SEED=7 COUNT=5000`. Needs Go on PATH.
+SEED ?= 42
+COUNT ?= 1000
 sim:
-	cd simulator && PYTHONPATH=src $(PYTHON) -m simulator
+	cd simulator && PYTHONPATH=src $(PYTHON) -m simulator --spawn-bidder --seed $(SEED) --count $(COUNT)
 
 # Benchmarks arrive in Milestone 4; never report numbers that were not measured.
 bench:
