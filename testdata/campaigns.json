@@ -1,0 +1,12 @@
+{
+  "campaigns": [
+    {
+      "id": "camp-001",
+      "status": "active",
+      "cpm_micros": 2500000,
+      "creatives": [
+        { "crid": "cr-banner-300x250-001", "w": 300, "h": 250 }
+      ]
+    }
+  ]
+}

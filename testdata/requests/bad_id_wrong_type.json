@@ -1,0 +1,28 @@
+{
+  "id": 12345,
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 300,
+        "h": 250
+      },
+      "bidfloor": 0.5
+    }
+  ],
+  "tmax": 120,
+  "site": {
+    "id": "site-100",
+    "domain": "news.example.com",
+    "page": "https://news.example.com/a"
+  },
+  "device": {
+    "ua": "Mozilla/5.0 (X11; Linux x86_64)",
+    "ip": "203.0.113.10",
+    "devicetype": 2,
+    "os": "Linux",
+    "geo": {
+      "country": "USA"
+    }
+  }
+}

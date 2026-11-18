@@ -1,0 +1,17 @@
+{
+  "id": "req-0003",
+  "seatbid": [
+    {
+      "seat": "minidsp",
+      "bid": [
+        {
+          "id": "req-0003-1",
+          "impid": "1",
+          "price": 2.5,
+          "crid": "cr-banner-300x250-001"
+        }
+      ]
+    }
+  ],
+  "cur": "USD"
+}

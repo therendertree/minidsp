@@ -1,0 +1,125 @@
+{
+  "endpoint": "POST /openrtb2/bid",
+  "cases": [
+    {
+      "name": "ok_site_banner",
+      "request": "requests/ok_site_banner.json",
+      "expect_status": 200,
+      "expect_response": "responses/ok_site_banner.json"
+    },
+    {
+      "name": "ok_app_banner",
+      "request": "requests/ok_app_banner.json",
+      "expect_status": 200,
+      "expect_response": "responses/ok_app_banner.json"
+    },
+    {
+      "name": "ok_floor_equals_bid",
+      "request": "requests/ok_floor_equals_bid.json",
+      "expect_status": 200,
+      "expect_response": "responses/ok_floor_equals_bid.json"
+    },
+    {
+      "name": "ok_unknown_fields_ignored",
+      "request": "requests/ok_unknown_fields_ignored.json",
+      "expect_status": 200,
+      "expect_response": "responses/ok_unknown_fields_ignored.json"
+    },
+    {
+      "name": "ok_no_optional_fields",
+      "request": "requests/ok_no_optional_fields.json",
+      "expect_status": 200,
+      "expect_response": "responses/ok_no_optional_fields.json"
+    },
+    {
+      "name": "nobid_floor_above_bid",
+      "request": "requests/nobid_floor_above_bid.json",
+      "expect_status": 204,
+      "expect_nobid_reason": "floor_above_bid"
+    },
+    {
+      "name": "nobid_size_mismatch",
+      "request": "requests/nobid_size_mismatch.json",
+      "expect_status": 204,
+      "expect_nobid_reason": "size_mismatch"
+    },
+    {
+      "name": "bad_missing_id",
+      "request": "requests/bad_missing_id.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_missing_id.json"
+    },
+    {
+      "name": "bad_id_wrong_type",
+      "request": "requests/bad_id_wrong_type.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_id_wrong_type.json"
+    },
+    {
+      "name": "bad_empty_imp",
+      "request": "requests/bad_empty_imp.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_empty_imp.json"
+    },
+    {
+      "name": "bad_multiple_imps",
+      "request": "requests/bad_multiple_imps.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_multiple_imps.json"
+    },
+    {
+      "name": "bad_missing_imp_id",
+      "request": "requests/bad_missing_imp_id.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_missing_imp_id.json"
+    },
+    {
+      "name": "bad_missing_banner",
+      "request": "requests/bad_missing_banner.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_missing_banner.json"
+    },
+    {
+      "name": "bad_banner_missing_size",
+      "request": "requests/bad_banner_missing_size.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_banner_missing_size.json"
+    },
+    {
+      "name": "bad_site_and_app",
+      "request": "requests/bad_site_and_app.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_site_and_app.json"
+    },
+    {
+      "name": "bad_neither_site_nor_app",
+      "request": "requests/bad_neither_site_nor_app.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_neither_site_nor_app.json"
+    },
+    {
+      "name": "bad_negative_bidfloor",
+      "request": "requests/bad_negative_bidfloor.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_negative_bidfloor.json"
+    },
+    {
+      "name": "bad_non_usd_floor",
+      "request": "requests/bad_non_usd_floor.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_non_usd_floor.json"
+    },
+    {
+      "name": "bad_negative_tmax",
+      "request": "requests/bad_negative_tmax.json",
+      "expect_status": 400,
+      "expect_response": "responses/bad_negative_tmax.json"
+    },
+    {
+      "name": "bad_malformed_json",
+      "request": "requests/bad_malformed_json.txt",
+      "expect_status": 400,
+      "expect_response": "responses/bad_malformed_json.json"
+    }
+  ]
+}

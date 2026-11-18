@@ -1,0 +1,28 @@
+{
+  "id": "req-0002",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 300,
+        "h": 250
+      },
+      "bidfloor": 0.5,
+      "bidfloorcur": "USD"
+    }
+  ],
+  "tmax": 120,
+  "device": {
+    "ua": "Dalvik/2.1.0 (Linux; Android 14)",
+    "ip": "198.51.100.7",
+    "devicetype": 4,
+    "os": "Android",
+    "geo": {
+      "country": "USA"
+    }
+  },
+  "app": {
+    "id": "app-200",
+    "bundle": "com.example.game"
+  }
+}

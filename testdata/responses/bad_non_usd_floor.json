@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "unsupported_currency",
+    "field": "imp[0].bidfloorcur"
+  }
+}

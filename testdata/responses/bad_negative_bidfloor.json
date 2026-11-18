@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "invalid_value",
+    "field": "imp[0].bidfloor"
+  }
+}

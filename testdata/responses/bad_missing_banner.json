@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "missing_field",
+    "field": "imp[0].banner"
+  }
+}
